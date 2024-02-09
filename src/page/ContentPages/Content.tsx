@@ -35,10 +35,8 @@ const items = [
   },
 ];
 const cardItems = items.map((item) => (
-  <Card>
-    <div>
-      <img src={item.img} className="rounded-[6px]" />
-      <CardContent>
+    <div className="border pb-[8px] rounded-[8px] shadow-md">
+      <img src={item.img} className="rounded-t-[8px]" />
         <div className="flex flex-col justify-between w-full mt-[8px]">
           <div className="text-[18px] font-bold ">{item.title}</div>
           <div className="text-[14px] text-[#142B41] mt-[8px]">{item.desc}</div>
@@ -48,9 +46,7 @@ const cardItems = items.map((item) => (
             </Button>
           </div>
         </div>
-      </CardContent>
     </div>
-  </Card>
 ));
 function ContentPage() {
   return (
