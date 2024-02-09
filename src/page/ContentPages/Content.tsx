@@ -41,7 +41,7 @@ const cardItems = items.map((item) => (
           <div className="text-[18px] font-bold ">{item.title}</div>
           <div className="text-[14px] text-[#142B41] mt-[8px]">{item.desc}</div>
           <div>
-            <Button className="rounded-[33px] bg-[#2a4b6a] font-bold text-[12px] text-[white]">
+            <Button variant="outline" className="rounded-[33px] bg-[#2a4b6a] font-bold text-[12px] text-[white]">
             Buy package
             </Button>
           </div>
