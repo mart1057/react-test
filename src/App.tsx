@@ -2,7 +2,7 @@ import './App.css'
 import { useRoutes } from 'react-router-dom';
 import MenuBar from "./components/ui/menuBar.tsx";
 import ContentPage from './page/ContentPages/Content.tsx';
-import Signin from './page/SigninPage/Signin.tsx';
+import Signin from './page/SignInPage/SignIn.tsx';
 
 
 function App() {
