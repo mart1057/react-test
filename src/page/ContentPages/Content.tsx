@@ -4,14 +4,6 @@ import img2 from "../../assets/img/img2.png";
 import img3 from "../../assets/img/img3.png";
 import img4 from "../../assets/img/img4.png";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 const items = [
   {
     title: "Lorem ipsum",
@@ -34,8 +26,8 @@ const items = [
     img: img4,
   },
 ];
-const cardItems = items.map((item) => (
-    <div className="border pb-[8px] rounded-[8px] shadow-md">
+const cardItems = items.map((item,index) => (
+    <div className="border pb-[8px] rounded-[8px] shadow-md" key={index}>
       <img src={item.img} className="rounded-t-[8px]" />
         <div className="flex flex-col justify-between w-full mt-[8px]">
           <div className="text-[18px] font-bold ">{item.title}</div>
