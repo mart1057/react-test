@@ -6,9 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import {
   Select,
   SelectContent,
-  SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
@@ -105,19 +103,18 @@ function SignIn() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-[14px]">
             <div className="grid grid-rows-4 gap-2">
               <div>
-                <Label htmlFor="password">Password</Label>
+                <Label>Company Name</Label>
                 <Input
-                  type="password"
-                  id="password"
-                  placeholder="Password"
+                  type="text"
+                  placeholder="Enter company name"
                   className="rounded-[4px] border border-[#D0D5DD]"
                 />
               </div>
               <div>
-                <Label htmlFor="password">Password</Label>
+                <Label>Country</Label>
                 <Select>
                   <SelectTrigger className="rounded-[4px] border border-[#D0D5DD]">
-                    <SelectValue placeholder="Theme" />
+                    <SelectValue placeholder="Select" />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="light">Light</SelectItem>
@@ -127,10 +124,9 @@ function SignIn() {
                 </Select>
               </div>
               <div className="row-span-2">
-                <Label htmlFor="password">Password</Label>
+                <Label>Address</Label>
                 <Textarea
-                  id="password"
-                  placeholder="Password"
+                  placeholder="Enter Address"
                   className="rounded-[4px] border border-[#D0D5DD] h-[85%]"
                 />
               </div>
@@ -138,20 +134,20 @@ function SignIn() {
             {/* /////////////////////////////// 2 /////////////////////////// */}
             <div className="grid grid-row gap-4">
               <div>
-                <Label htmlFor="password">Password</Label>
+                <Label>Tax ID</Label>
                 <Input
-                  type="password"
+                  type="text"
                   id="password"
-                  placeholder="Password"
+                  placeholder="Enter Tax ID"
                   className="rounded-[4px] border border-[#D0D5DD]"
                 />
               </div>
               <div>
-                <Label htmlFor="password">Password</Label>
+                <Label>Phone Number</Label>
                 <div className="flex">
                   <Select>
                     <SelectTrigger className=" w-[40%] rounded-[4px] border border-[#D0D5DD] mr-[8px]">
-                      <SelectValue placeholder="Theme" />
+                      <SelectValue placeholder="+66" />
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="light">Light</SelectItem>
@@ -160,18 +156,17 @@ function SignIn() {
                     </SelectContent>
                   </Select>{" "}
                   <Input
-                    type="password"
-                    id="password"
-                    placeholder="Password"
+                    type="text"
+                    placeholder="Enter Phone number"
                     className="rounded-[4px] border border-[#D0D5DD]"
                   />
                 </div>
               </div>
               <div>
-                <Label htmlFor="password">Password</Label>
+                <Label>State/Province</Label>
                 <Select>
                   <SelectTrigger className="rounded-[4px] border border-[#D0D5DD]">
-                    <SelectValue placeholder="Theme" />
+                    <SelectValue placeholder="Select" />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="light">Light</SelectItem>
@@ -181,10 +176,10 @@ function SignIn() {
                 </Select>
               </div>
               <div>
-                <Label htmlFor="password">Password</Label>
+                <Label>State/Province</Label>
                 <Select>
                   <SelectTrigger className="rounded-[4px] border border-[#D0D5DD]">
-                    <SelectValue placeholder="Theme" />
+                    <SelectValue placeholder="Select" />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="light">Light</SelectItem>
@@ -197,28 +192,26 @@ function SignIn() {
             {/* /////////////////////////////// 3 /////////////////////////// */}
             <div className="grid grid-row gap-4">
               <div>
-                <Label htmlFor="password">Password</Label>
+                <Label>Full Name</Label>
                 <Input
-                  type="password"
-                  id="password"
-                  placeholder="Password"
+                  type="Text"
+                  placeholder="Enter Full name"
                   className="rounded-[4px] border border-[#D0D5DD]"
                 />
               </div>
               <div>
-                <Label htmlFor="password">Password</Label>
+                <Label>Website</Label>
                 <Input
-                  type="password"
-                  id="password"
-                  placeholder="Password"
+                  type="text"
+                  placeholder="Enter website"
                   className="rounded-[4px] border border-[#D0D5DD]"
                 />
               </div>
               <div>
-                <Label htmlFor="password">Password</Label>
+                <Label>Sub-District</Label>
                 <Select>
                   <SelectTrigger className="rounded-[4px] border border-[#D0D5DD]">
-                    <SelectValue placeholder="Theme" />
+                    <SelectValue placeholder="Select" />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="light">Light</SelectItem>
@@ -228,11 +221,10 @@ function SignIn() {
                 </Select>
               </div>
               <div>
-                <Label htmlFor="password">Password</Label>
+                <Label>Zip Code</Label>
                 <Input
-                  type="password"
-                  id="password"
-                  placeholder="Password"
+                  type="text"
+                  placeholder="Enter Zip Code"
                   className="rounded-[4px] border border-[#D0D5DD]"
                 />
               </div>
